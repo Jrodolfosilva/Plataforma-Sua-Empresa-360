@@ -1,0 +1,33 @@
+<h1 align="center"> 
+Challenge Js    
+</h1>
+
+<p align="center">
+  <a href="#-sobre">Sobre</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+   <a href="#-Tecnologias">Tecnologias</a>&nbsp;&nbsp;&nbsp;|&nbsp;&nbsp;&nbsp;
+</p>
+
+
+## 📚 Sobre
+
+<p align="justify">
+Já desenvolvi projeto profissional semelhante a esse, utilizando o wodpress-elementor. Tenho buscado não enferruja, então, decidi recriar o projeto com uso de tecnologias de desenvolvimento web "mais code". Meu objetivo é desenvolver um site para divulgação do serviço de Tour Virtual 360, hospedando esses passeios e gerando landing pages individuais, automáticamente. O cliente seja ele comerciante ou imbiliário ou profissional de áreas corelacionadas poderá compartinhas o links de sua landing page com seus clientes. A landing page contará com dados do comercio ou imóvel em caso de imobiliário ou corretores, formulário para o envio de email diretamente para o propietário do produto. 
+</p>
+                                  
+
+## 🚀 Tecnologias
+
+O projeto foi desenvolvido a partir das tecnologias:
+
+<p>-*HTML*</p>
+<p>-*CSS*</p>
+<p>-*JS*</p>
+<p>-*REACT-VITE*</p>
+<p>-*TYPESCRIPT*</p>
+<p>-*JSON-SERVER*</p>
+<p>-*STYLED-COMPONENTS*</p>
+
+
+---------
+
+Developed by 🍁 [**Rodolfo Silva**](https://github.com/Jrodolfosilva)

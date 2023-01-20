@@ -15,8 +15,8 @@ const Header = ()=>{
                 <ul>
                     <li>Home</li>
                     <li>Sobre Nós</li>
-                    <li>Tours Comercial</li>
-                    <li>Tours Imóveis</li>
+                    <li>Dicas e Sugestões</li>
+                    <li>Nossas Soluções</li>
                     <li>Fale Conosco</li>
                     <li>WhatsApp</li>
                 </ul>

@@ -1,26 +1,49 @@
 import React from "react";
+import { useState } from "react";
 import { Link } from "react-router-dom";
 
-import {ContainerHeader} from "./styled"
+import {ContainerHeader,ContainerMobile} from "./styled"
 
 
 const Header = ()=>{
 
+
+const [open, setOpen] = useState(false);
+
+
+
     return(
-        <ContainerHeader>
+        <ContainerHeader mobile={open}>
             <picture>
                 <img src={""} alt={"LOGO"}/>
             </picture>
             <nav>
                 <ul>
-                    <li>Home</li>
-                    <li>Sobre Nós</li>
-                    <li>Dicas e Sugestões</li>
-                    <li>Nossas Soluções</li>
-                    <li>Fale Conosco</li>
-                    <li>WhatsApp</li>
+                    <li>
+                        <Link to={"/"}>Home</Link>
+                    </li>
+                    <li>
+                    <Link to={"/empresa"}>Sobre Nós</Link>
+                    </li>
+                    <li>
+                    <Link to={"/solucao"}>Nossas Soluções</Link>
+                    </li>
+                    <li>
+                    <Link to={"/blog"}>Blog</Link>
+                    </li>
+                    /**/
+                        <div>
+                            <li><Link to={"/fale-conosco"}>Fale Conosco</Link></li>
+                            <li><Link to={"/consultoria-gratis"}>Consultoria Grátis</Link>
+                            </li>
+                        </div>
+                    
                 </ul>
             </nav>
+            <ContainerMobile  >
+                <img src={""} alt="X" onClick={()=>{setOpen(!open)}} />
+            </ContainerMobile>
+
         </ContainerHeader>
     );
 }

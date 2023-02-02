@@ -3,14 +3,17 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyledSite =  createGlobalStyle`
 
 :root{
-    --verde-destaque:#4fed56;
-    --azul-background:#0d181e;
-    --color-title: #324858;
-    --color-white-dark:#CFD8DE;
-    --color-white-ligth:#CFD8DE;
-    --color-green-ligth:#cbf1d0;
+    --destaque:#4fed56;
+    --background:#0d181e;
+    --title: #324858;
+    --white-dark:#CFD8DE;
+    --white-ligth:#CFD8DE;
+    --green-ligth:#cbf1d0;
+    --azul:#0C4F7D;
+    --borda:#0C4F7D;
+    --radiuscta:20px;
     --font-size-p:16px;
-    --font-size-h1:40px;
+    --font-size-h1:36px;
     --font-size-h2:20px;
     --font-size-small:14px;
 }

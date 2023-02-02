@@ -1,6 +1,7 @@
 import React from "react";
 import { useState } from "react";
 import { Link } from "react-router-dom";
+import LogoMarca from "../../assets/logo-marca-dawp.png"
 
 import {ContainerHeader,ContainerMobile} from "./styled"
 
@@ -15,7 +16,7 @@ const [open, setOpen] = useState(false);
     return(
         <ContainerHeader mobile={open}>
             <picture>
-                <img src={""} alt={"LOGO"}/>
+                <img src={LogoMarca} alt={"logo-marca-da-dawp"}/>
             </picture>
             <nav>
                 <ul>
@@ -31,7 +32,7 @@ const [open, setOpen] = useState(false);
                     <li>
                     <Link to={"/blog"}>Blog</Link>
                     </li>
-                    /**/
+                    
                         <div>
                             <li><Link to={"/fale-conosco"}>Fale Conosco</Link></li>
                             <li><Link to={"/consultoria-gratis"}>Consultoria Grátis</Link>

@@ -5,18 +5,28 @@ interface Mobile{
 }
 
 export const ContainerHeader = styled.div`
-background-color: #fff;
-border-bottom: 2px solid #3333 ;
+border-bottom: 2px solid var(--bord) ;
 min-height: 90px;
-padding: 010px 35px;
+padding: 015px 40px;
 display: flex;
 justify-content: space-between;
 align-items: center;
-background-color: var(--azul-background);
+background-color: var(--background);
+
+width: 100%;
+top: 0;
+z-index: 9;
+position: fixed;
+
+picture {
+    img{
+        width: 170px;
+    }
+}
 
 nav>ul{
     display: flex;
-    gap: 2rem;
+    gap: 1rem;
 
 
     li> a{
@@ -24,17 +34,21 @@ nav>ul{
         padding: 12px 16px;
         font-size: var(--font-size-small);
         font-weight: 600;
-        color: var(--color-white-ligth);
+        color: var(--white-ligth);
 
+    }
+    div{
+        display: flex;
+        gap:3rem;
     }
     div>li:nth-child(1){
             
-            border:1px solid var(--color-white-ligth);
-            border-radius: 20px;
+            border:1px solid var(--white-ligth);
+            border-radius: var(--radiuscta);
            
 
             :hover{
-                background-color: #fff;
+                background-color: #2222;
                 a{
                     text-decoration: none;
                 }
@@ -43,15 +57,15 @@ nav>ul{
     
     li:last-child{
         border:1px solid black;
-        border-radius: 20px;
-        background-color: var(--verde-destaque);
+        border-radius: var(--radiuscta);
+        background-color: var(--destaque);
 
         a{
-            color: var(--azul-background);
+            color: var(--background);
         }
 
         :hover{
-            background-color: var(--color-white-dark);
+            background-color: var(--white-dark);
 
             a{
                 text-decoration: none;
@@ -77,14 +91,14 @@ nav>ul{
         ul{
             flex-direction:column;
             align-items:center;
-            background-color:var(--azul-background);
+            background-color:var(--background);
             padding:3rem 5rem;
             gap:1rem;
             width:100vw;
             height:100vh;
 
             li{
-                border-bottom:1px solid var(--color-white-dark);
+                border-bottom:1px solid var(--white-dark);
                 margin-bottom:1rem;
                 padding:1rem 0rem;
                 width:100%;

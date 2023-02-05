@@ -41,7 +41,7 @@ nav>ul{
         display: flex;
         gap:3rem;
     }
-    div>li:nth-child(1){
+    div>li:first-child{
             
             border:1px solid var(--white-ligth);
             border-radius: var(--radiuscta);
@@ -79,6 +79,8 @@ nav>ul{
 /***Estilo Tablet 768px*** */
 
 @media (max-width:768px) {
+
+
     nav{
         display: none;
         ${({mobile})=>mobile&&`
@@ -110,8 +112,14 @@ nav>ul{
             div{
                 display:flex;
                 align-items:center;
-                gap:2rem;
+                justify-content:center;
+                gap:4rem;
                 width:100%; 
+
+                li{
+                  max-width:40%
+                }
+
             }
 
         }
@@ -124,11 +132,17 @@ nav>ul{
 /*Estilo Mobile 450px*/
 
 @media (max-width:450px) {
-    
-nav > ul {
+    padding:0.5rem 1rem; 
+    picture {
+    img{
+        width: 9rem;
+    }
+}
 
-li{
-    font-size:18px ;
+    nav > ul {
+
+    li{
+        font-size:1.8rem ;
 }
 
 }

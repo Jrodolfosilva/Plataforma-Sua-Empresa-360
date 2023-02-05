@@ -3,7 +3,7 @@ import styled from "styled-components";
 
 export const ContainerBanner = styled.section`
 min-height: 100vh;
-background-color: black;
+background-color: var(--background);
 padding-top: 3rem;
 text-align: center;
 display: flex;
@@ -22,7 +22,7 @@ div{
         line-height: 1.2;
     }
     h3{
-        font-size: var(--font-size-p);
+        font-size: 2rem;
         font-weight: 400;        
     }
     span{
@@ -46,9 +46,34 @@ div{
 }
 
 
+@media (max-width:768px) {
+    padding: 0rem;
+
+    h1,span{
+        font-size: 2.5rem;
+    }
+    h3{
+        font-size: 1.4rem;
+    }
+
+    div{
+        min-width: 100%;
+        button:first-child{
+            display: none;
+        }
+        button{
+            font-size: 1.5rem;
+            margin: 0rem;
+        }
+    }
+
+}
 
 
+}
 
+@media (max-width:450px) {
+    padding: 0px 1rem;
 }
 
 `

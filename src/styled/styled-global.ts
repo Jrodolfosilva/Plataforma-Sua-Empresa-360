@@ -3,11 +3,13 @@ import { createGlobalStyle } from "styled-components";
 export const GlobalStyledSite =  createGlobalStyle`
 
 :root{
-    --destaque:#4fed56;
+    --destaque:#04d361;
     --background:#0d181e;
+    --gradiente:linear-gradient(180deg, rgba(207,216,222,1) 81%, rgba(255,255,255,1) 100%);
     --title: #324858;
+    --color-texto:#294250;
     --white-dark:#CFD8DE;
-    --white-ligth:#CFD8DE;
+    --white-ligth:#fff;
     --green-ligth:#cbf1d0;
     --azul:#0C4F7D;
     --borda:#0C4F7D;
@@ -25,6 +27,8 @@ export const GlobalStyledSite =  createGlobalStyle`
     padding: 0px;
     box-sizing: border-box;
     font-family: 'DM Sans', sans-serif;
+    outline: none;
+    border: none;
 }
 
 html{

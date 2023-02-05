@@ -1,6 +1,8 @@
 import React from "react";
 import {ContainerHome} from "./styled"
 import Banner from "../../components/banner/Banner";
+import About from "../../components/about/About";
+import Services from "../../components/services/Services";
 
 
 const Home = ()=>{
@@ -8,7 +10,8 @@ const Home = ()=>{
     return(
         <ContainerHome>
             <Banner/>
-            <h1>Está é a página home, onde deve conter informações do serviço de tour virtual e CTAs para contato</h1>
+            <About/>
+            <Services/>
         </ContainerHome>
     )
 }
